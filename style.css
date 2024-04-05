@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 1200px;
+    background-color: beige;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black;
+    padding: 3px;
+    margin-bottom: 3px;
+  }
+  button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .box {
+    width: 150px;
+    height: 150px;
+    background-color: #007bff;
+    position: static;
+    transition: all 0.3s ease-in-out;
+  }
+  .static { position: static;
+     }
+  .relative { position: relative; 
+   }
+  .absolute { position: absolute; 
+    }
+  .fixed { position: fixed; 
+    }
+
+    .slider-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .slider-container label {
+    margin-right: 10px;
+  }
+
+  .slider {
+    width: 200px;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    background: #d3d3d3;
+    outline: none;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  .slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    cursor: pointer;
+    border-radius: 50%;
+  }

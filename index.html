@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Positioning</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+
+</head>
+<body>
+<div class="container">
+<div>
+  <button onclick="changePosition('static')">Static</button>
+  <button onclick="changePosition('relative')">Relative</button>
+  <button onclick="changePosition('absolute')">Absolute</button>
+  <button onclick="changePosition('fixed')">Fixed</button>
+</div>
+
+<div>
+  <h2 id="position-title">Static Positioning</h2>
+  <p id="position-values">Top: 0px, Left: 0px</p>
+</div>
+<div class="slider-container">
+    <label for="top-slider">Top:</label>
+    <input type="range" min="0" max="500" value="0" class="slider" id="top-slider" oninput="updatePosition()">
+  </div>
+  
+  <div class="slider-container">
+    <label for="left-slider">Left:</label>
+    <input type="range" min="0" max="500" value="0" class="slider" id="left-slider" oninput="updatePosition()">
+  </div>
+</div>
+<div class="box"></div>
+
+
+</body>
+</html>
